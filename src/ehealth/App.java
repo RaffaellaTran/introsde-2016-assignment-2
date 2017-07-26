@@ -6,6 +6,7 @@ import java.net.URISyntaxException;
 
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
+import ehealth.MyApplicationConfig;
 
 import java.net.InetAddress;
 
@@ -17,7 +18,7 @@ public class App
     public static void main(String[] args) throws IllegalArgumentException, IOException, URISyntaxException
     {
         String protocol = "http://";
-        String port_value = "5705";
+        String port_value = "5712";
         if (String.valueOf(System.getenv("PORT")) != "null"){
             port_value=String.valueOf(System.getenv("PORT"));
         }

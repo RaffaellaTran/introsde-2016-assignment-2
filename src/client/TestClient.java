@@ -433,12 +433,12 @@ public class TestClient {
 		String input = null;
 		if(mediaType == MediaType.APPLICATION_XML){
 			input = "<measure>"
-					+ "<value>80</value>"
+					+ "<value>87</value>"
 					+ "<created>2011-12-09</created>"
 					+ "</measure>";
 		}else{
 			JSONObject measureObj = new JSONObject();
-			measureObj.put("value", 80);
+			measureObj.put("value", 87);
 			measureObj.put("created", "2011-12-09");
 			input = measureObj.toString();
 		}
@@ -448,7 +448,7 @@ public class TestClient {
 		if(response.getStatus() == 201){
 			String value_after = getHealthHistoryValue();
 			//checks if the value is changed
-			System.out.println(value_before+" "+value_after );
+			
 			if(!value_after.equals(value_before))
 				
 				result = "OK";
@@ -623,10 +623,10 @@ public class TestClient {
 
 	public static void main(String[] args) {
 		if (args.length < 1)
-			System.out.println("Error: insert {myServer, partnerServer} and {xml, json}");
+			System.out.println("Error: insert {xml, json}");
 		else{
 				
-				uriServer = "http://10.196.168.231:5705/sdelab/"; //My server
+				uriServer = "https://introsde-2016-assignment2.herokuapp.com/sdelab"; //My server
 
 			//sets the media type (XML or JSON)
 			if(args[0].equals("JSON"))
