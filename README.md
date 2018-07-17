@@ -1,6 +1,6 @@
-<h1>introsde-2016-assignment-2</h1>
+<h1>Introduction to Service Design and Engineering (fall 2016) - Assignment 2</h1>
 
-<h2>RAFFAELLA TRAN | Assignment2 | University of Trento </h2>
+<h2>RAFFAELLA TRAN |University of Trento </h2>
 
 <h2>Project structure </h2>
 
